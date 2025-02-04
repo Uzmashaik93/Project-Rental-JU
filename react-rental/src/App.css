@@ -29,7 +29,7 @@ body{
   justify-content: right;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 2%;
   background-color: rgba(222, 183, 93, 0.21);
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.69);
@@ -40,4 +40,32 @@ body{
   text-decoration: none;
   color: rgba(0, 0, 0, 0.69);
   font-style: italic;
+}
+
+.footer a:hover {
+ color:rgba(0, 0, 0, 0.80)
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+  align-items: center;
+  height: 81.7%;
+  width: 180px;
+  position: absolute;
+  z-index: 1;
+  top: 10;
+  background-color: rgba(222, 183, 93, 0.21);
+  padding-top: 20px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.69);
+  padding-bottom: 15px;
+}
+
+.sidebar a:hover{
+  color:rgba(0, 0, 0, 0.80)
 }
