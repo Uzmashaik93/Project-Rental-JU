@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 function ListItem({ apt, onDelete }) {
     return (
       <li className="rental-card">
