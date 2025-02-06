@@ -1,8 +1,8 @@
-import { results } from "../data/aparments.json";
 import { useState } from "react";
 import ListItem from "./ListItem";
+import { NavLink } from "react-router-dom";
 
-function ListAppartments() {
+function ListAppartments({ results }) {
   const [resultList, setResultList] = useState(results);
 
   const deleteList = (aptId) => {
@@ -15,7 +15,13 @@ function ListAppartments() {
       {resultList
         .filter((rentalObj) => rentalObj.instant_bookable)
         .map((rentalObj) => (
-          <ListItem key={rentalObj.id} apt={rentalObj} onDelete={deleteList} />
+          <NavLink key={rentalObj.id} to={`/apartmentdetails/${rentalObj.id}`}>
+            <ListItem
+              key={rentalObj.id}
+              apt={rentalObj}
+              onDelete={deleteList}
+            />
+          </NavLink>
         ))}
     </div>
   );
