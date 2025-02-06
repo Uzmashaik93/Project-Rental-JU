@@ -11,17 +11,13 @@ function ListAppartments() {
   };
 
   return (
-    <ul>
+    <div>
       {resultList
         .filter((rentalObj) => rentalObj.instant_bookable)
         .map((rentalObj) => (
-          <ListItem
-            key={rentalObj.id}
-            apt={rentalObj}
-            onDelete={deleteList}
-          />
+          <ListItem key={rentalObj.id} apt={rentalObj} onDelete={deleteList} />
         ))}
-    </ul>
+    </div>
   );
 }
 
