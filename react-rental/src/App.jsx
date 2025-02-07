@@ -12,6 +12,7 @@ import { results } from "./data/aparments.json";
 
 function App() {
   const [resultList, setResultList] = useState(results);
+
   return (
     <>
       <Navbar />

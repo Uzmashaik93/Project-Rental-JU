@@ -1,18 +1,19 @@
 import { useState } from "react";
 import ListItem from "./ListItem";
-import { NavLink } from "react-router-dom";
-import CreateNewListing from "../pages/CreateNewListing";
+import { Navigate, NavLink } from "react-router-dom";
 
 function ListAppartments({ resultList, setResultList }) {
   const deleteList = (aptId) => {
-    const updatedList = resultList.filter((apt) => apt.id !== aptId);
+    const updatedList = resultList.filter((apt) => apt.id != aptId);
     setResultList(updatedList);
   };
 
   return (
     <div>
       <div className="new-item-container">
-        <NavLink to="/CreateNewListing">Create New Listing</NavLink>
+        <NavLink to="/CreateNewListing">
+          <button className="new-item">Create New Listing</button>
+        </NavLink>
       </div>
       <div
         style={{
@@ -24,17 +25,9 @@ function ListAppartments({ resultList, setResultList }) {
         {resultList
           .filter((rentalObj) => rentalObj.instant_bookable)
           .map((rentalObj) => (
-            <NavLink
-              className="navlink"
-              key={rentalObj.id}
-              to={`/apartmentdetails/${rentalObj.id}`}
-            >
-              <ListItem
-                key={rentalObj.id}
-                apt={rentalObj}
-                onDelete={deleteList}
-              />
-            </NavLink>
+            <div key={rentalObj.id}>
+              <ListItem apt={rentalObj} onDelete={deleteList} />
+            </div>
           ))}
       </div>
     </div>
