@@ -11,11 +11,17 @@ function ListAppartments({ results }) {
   };
 
   return (
-    <div>
+    <div
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+    >
       {resultList
         .filter((rentalObj) => rentalObj.instant_bookable)
         .map((rentalObj) => (
-          <NavLink key={rentalObj.id} to={`/apartmentdetails/${rentalObj.id}`}>
+          <NavLink
+            className="navlink"
+            key={rentalObj.id}
+            to={`/apartmentdetails/${rentalObj.id}`}
+          >
             <ListItem
               key={rentalObj.id}
               apt={rentalObj}

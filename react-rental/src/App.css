@@ -1,6 +1,8 @@
 
 body{
-  margin: 0
+  margin: 0;
+  background-color: rgb(244, 240, 235);
+  color: black;
 }
 
 .navbar{
@@ -18,6 +20,14 @@ body{
   width: 90px;
   height: auto;
   padding-right: 10px;
+}
+
+.navlink{
+  color: black;
+}
+
+.navlink:hover{
+  color: rgb(10, 48, 48);
 }
 
 .footer {
@@ -66,15 +76,40 @@ body{
 }
 
 .rental-card{
-  border: 1px solid rgba(0, 0, 0, 0.327);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-  padding: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(10px);
+  background-color: #eae4e47c;
+  border: 1px solid rgba(0, 0, 0, 0.125);  
+ 
+  padding: 38px;  
+  height: 425px; 
+}
+
+.rental-card:hover{
+  box-shadow: inset;
 }
 
 .rental-card img{
-  width: 200px;
-  height: auto;
+  height: 300px;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 70vh; 
+  width: 430px;
   margin-right: 20px;
+  
+}
+
+.rendered-description{
+  margin-top: 0;
 }
