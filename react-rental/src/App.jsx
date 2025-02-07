@@ -4,11 +4,12 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
 import ItemDetail from "./pages/CardDetailPage";
-import ListAppartments from "./components/HomePage";
+import ListAppartments from "./pages/HomePage";
 import CreateNewListing from "./pages/CreateNewListing";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { results } from "./data/aparments.json";
+import EditDetails from "./pages/EditDetailsPage";
 
 function App() {
   const [resultList, setResultList] = useState(results);
@@ -32,6 +33,13 @@ function App() {
         <Route
           path="/CreateNewListing"
           element=<CreateNewListing
+            resultList={resultList}
+            setResultList={setResultList}
+          />
+        />
+        <Route
+          path="/EditDetailsPage/:listId"
+          element=<EditDetails
             resultList={resultList}
             setResultList={setResultList}
           />

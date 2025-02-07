@@ -1,5 +1,7 @@
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import dummyImage from "../assets/dummyImage.png";
+
+import EditDetails from "../pages/EditDetailsPage";
 
 function ItemDetail({ apartmentsList }) {
   const { listId } = useParams();
@@ -18,6 +20,12 @@ function ItemDetail({ apartmentsList }) {
           <p>Bathrooms: {apartment.bathrooms}</p>
           <p>Bedrooms: {apartment.bedrooms}</p>
           <p>Price: {apartment.price}</p>
+          <NavLink
+            to={`/EditDetailsPage/${apartment.id}`}
+            renderComponent=<EditDetails />
+          >
+            <button>Edit</button>
+          </NavLink>
         </div>
       </div>
     </div>

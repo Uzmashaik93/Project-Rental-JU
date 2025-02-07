@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 
 function CreateNewListing({ resultList, setResultList }) {
   const [name, setName] = useState("");
-  const [accomodates, setAccomodates] = useState("");
+  const [accommodates, setAccomodates] = useState("");
   const [bathrooms, setBathrooms] = useState("");
   const [bedrooms, setBedrooms] = useState("");
   const [price, setPrice] = useState("");
@@ -16,7 +16,7 @@ function CreateNewListing({ resultList, setResultList }) {
 
     const newListing = {
       name: name,
-      accomodates: accomodates,
+      accomodates: accommodates,
       bathrooms: bathrooms,
       bedrooms: bedrooms,
       price: price,
@@ -59,7 +59,7 @@ function CreateNewListing({ resultList, setResultList }) {
             type="number"
             name="accomodates"
             placeholder="Enter number"
-            value={accomodates}
+            value={accommodates}
             onChange={(e) => {
               setAccomodates(e.target.value);
             }}
@@ -93,7 +93,7 @@ function CreateNewListing({ resultList, setResultList }) {
         <label>
           Enter the Price
           <input
-            type="number"
+            type="text"
             name="price"
             placeholder="Enter the price"
             value={price}

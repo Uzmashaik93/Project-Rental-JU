@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ListItem from "./ListItem";
+import ListItem from "../components/ListItem";
 import { Navigate, NavLink } from "react-router-dom";
 
 function ListAppartments({ resultList, setResultList }) {
