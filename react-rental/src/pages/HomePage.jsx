@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ListItem from "../components/ListItem";
-import { Navigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function ListAppartments({ resultList, setResultList }) {
   const deleteList = (aptId) => {
