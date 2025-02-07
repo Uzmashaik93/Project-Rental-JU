@@ -1,9 +1,11 @@
+import dummyImage from "../assets/dummyImage.png";
+
 function ListItem({ apt, onDelete }) {
   return (
     <div className="card">
       <div className="rental-card">
         <div className="wrapper">
-          <img src={apt.picture_url} alt={apt.name} />
+          <img src={apt.picture_url || dummyImage} alt={apt.name} />
 
           <p>{apt.name}</p>
           <p>Price: {apt.price}</p>
