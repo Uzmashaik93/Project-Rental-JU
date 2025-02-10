@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import dummyImage from "../assets/dummyImage.png";
-
 import { motion } from "motion/react";
 
 function ListItem({ apt, onDelete }) {
@@ -16,7 +15,7 @@ function ListItem({ apt, onDelete }) {
 
       <p style={{ textAlign: "center", height: 30 }}>{apt.name}</p>
       <p>Price: {apt.price}</p>
-      <button onClick={() => onDelete(apt.id)}>Delete apartment</button>
+      <button className="delete-button" onClick={() => onDelete(apt.id)}>Delete apartment</button>
     </motion.div>
   );
 }
