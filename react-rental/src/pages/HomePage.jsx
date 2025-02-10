@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ListItem from "../components/ListItem";
-import { Navigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function ListAppartments({ resultList, setResultList }) {
   const deleteList = (aptId) => {
@@ -15,13 +15,7 @@ function ListAppartments({ resultList, setResultList }) {
           <button className="new-item">Create New Listing</button>
         </NavLink>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
+      <div className="list-container">
         {resultList
           .filter((rentalObj) => rentalObj.instant_bookable)
           .map((rentalObj) => (
