@@ -12,7 +12,7 @@ function ListItem({ apt, onDelete }) {
 
           <p>{apt.name}</p>
           <p>Price: {apt.price}</p>
-          <button onClick={() => onDelete(apt.id)}>Delete apartment</button>
+          <button className="delete-button" onClick={() => onDelete(apt.id)}>Delete apartment</button>
         </div>
       </div>
     </div>
