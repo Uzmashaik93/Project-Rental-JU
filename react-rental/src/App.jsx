@@ -21,30 +21,30 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<ListAppartments
+          element=<ListAppartments
             resultList={resultList}
             setResultList={setResultList}
-          />}
+          />
         />
         <Route
           path="/apartmentdetails/:listId"
-          element={<ItemDetail apartmentsList={resultList} />}
+          element=<ItemDetail apartmentsList={resultList} />
         />
         <Route
           path="/CreateNewListing"
-          element={<CreateNewListing
+          element=<CreateNewListing
             resultList={resultList}
             setResultList={setResultList}
-          />}
+          />
         />
         <Route
           path="/EditDetailsPage/:listId"
-          element={<EditDetails
+          element=<EditDetails
             resultList={resultList}
             setResultList={setResultList}
-          />}
+          />
         />
-        <Route path="/About" element={<About />} />
+        <Route path="/About" element=<About /> />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

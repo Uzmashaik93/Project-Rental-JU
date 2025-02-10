@@ -1,9 +1,6 @@
 
 body{
   margin: 0;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   background-color: rgb(244, 240, 235);
   color: black;
 }
@@ -12,7 +9,7 @@ body{
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 100px;
+  height: 10%;
   background-color: rgba(222, 183, 93, 0.21);
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.69);
@@ -22,8 +19,7 @@ body{
 .navbar img {
   width: 90px;
   height: auto;
-  padding-right: 20px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navlink{
@@ -39,7 +35,7 @@ body{
   justify-content: right;
   align-items: center;
   width: 100%;
-  min-height: 50px;
+  height: 2%;
   background-color: rgba(222, 183, 93, 0.21);
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.69);
@@ -82,7 +78,6 @@ body{
   backdrop-filter: blur(10px);
   background-color: #eae4e47c;
   border: 1px solid rgba(0, 0, 0, 0.125);  
-  border-radius: 8px;
   padding: 38px;  
   height: 425px; 
 }
@@ -94,12 +89,12 @@ body{
 .rental-card img{
   height: 300px;
   width: 100%;
-  border-radius: 5px;
 }
 
 .wrapper {
   width: 100%;
   height: 100%;
+  
 }
 
 .card{
@@ -109,20 +104,24 @@ body{
   height: 70vh; 
   width: 430px;
   margin-right: 20px;
+  
 }
 
 .rendered-description{
   margin-top: 0;
 }
 
-.new-item,.form-button {
+
+
+.new-item,.form-button{
   width: 150px;
-  padding: 15px;
+  padding: 10px;
   margin-top: 20px;
   background-color: rgba(222, 183, 93, 0.21);
-  color: #333333e2;
-  border: none;
-  border-radius: 8px;
+  color: #333;
+  border: 1px solid #6c6a6a;
+
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -132,17 +131,6 @@ body{
   justify-content: right;
   align-items: center;
   margin-right: 20px;
-}
-
-.delete-button{
-  background-color: #c5481fb1;
-  border: none;
-  color: white;
-  padding: 10px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
 }
 
 form{
