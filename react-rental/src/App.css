@@ -73,39 +73,44 @@ body{
   color:rgba(0, 0, 0, 0.80)
 }
 
-.rental-card{
-  backdrop-filter: blur(16px) saturate(180%);
-  backdrop-filter: blur(10px);
-  background-color: #eae4e47c;
-  border: 1px solid rgba(0, 0, 0, 0.125);  
-  padding: 38px;  
-  height: 425px; 
-}
-
-.rental-card:hover{
-  box-shadow: inset;
-}
-
-.rental-card img{
-  height: 300px;
-  width: 100%;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px ;
+    margin-bottom: 35px;
 }
 
 .card{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;  
-  height: 70vh; 
-  width: 430px;
-  margin-right: 20px;
-  
+  width: 300px;
+  backdrop-filter: blur(10px);
+  background-color: #eae4e47c;
+  border: 1px solid rgba(0, 0, 0, 0.125);  
+  padding: 15px;  
+  height: 355px; 
+  border-radius: 10px;
+ 
 }
+
+
+
+.card:hover{
+  box-shadow: inset;
+}
+
+.card img{
+    width: 300px;  
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;  
+}
+
+
 
 .rendered-description{
   margin-top: 0;

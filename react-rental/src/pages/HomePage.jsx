@@ -15,13 +15,7 @@ function ListAppartments({ resultList, setResultList }) {
           <button className="new-item">Create New Listing</button>
         </NavLink>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
+      <div className="list-container">
         {resultList
           .filter((rentalObj) => rentalObj.instant_bookable)
           .map((rentalObj) => (

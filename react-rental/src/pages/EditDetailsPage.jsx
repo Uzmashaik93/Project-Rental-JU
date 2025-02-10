@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function EditDetails({ resultList, setResultList }) {
   const { listId } = useParams();
+  const navigate = useNavigate();
   const [currentApartment, setCurrentApartment] = useState(
     resultList.find((apartmentObj) => {
       return apartmentObj.id == listId;
@@ -17,6 +18,7 @@ function EditDetails({ resultList, setResultList }) {
       ...resultList.filter((apt) => apt.id !== currentApartment.id),
     ];
     setResultList(newApartListing);
+    navigate("/");
   };
 
   const handleChange = (e) => {
@@ -82,7 +84,7 @@ function EditDetails({ resultList, setResultList }) {
           />
         </label>
 
-        <button className="form-button">Create</button>
+        <button className="form-button">Save changes</button>
       </form>
     </div>
   );
