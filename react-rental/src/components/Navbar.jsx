@@ -7,10 +7,12 @@ function Navbar() {
       <NavLink to="/">
       <img src={logo} alt="Logo" />
       </NavLink>
-      <h3>APPARTMENTS FOR RENTAL</h3>
+      <h2>APPARTMENTS FOR RENTAL</h2>
 
+    <div className="sidebar">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/About">About</NavLink>
+      </div>
     </div>
   );
 }

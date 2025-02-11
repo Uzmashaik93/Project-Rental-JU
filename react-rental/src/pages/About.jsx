@@ -1,4 +1,3 @@
-import "../pages/About.css";
 
 function About() {
   return (

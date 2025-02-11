@@ -54,13 +54,12 @@ body{
 
 .sidebar{
   display: flex;
-  flex-direction: column;
-  justify-content:right;
+  justify-content: end;
   align-items: center;
   height: 100%;
   width: 180px;
   z-index: 1;
-  background-color: rgba(222, 183, 93, 0.21);
+  gap: 20px;
 }
 
 .sidebar a{
@@ -88,13 +87,11 @@ body{
   justify-content: center;
   align-items: center;  
   width: 300px;
-  backdrop-filter: blur(10px);
   background-color: #eae4e47c;
   border: 1px solid rgba(0, 0, 0, 0.125);  
   padding: 15px;  
   height: 355px; 
   border-radius: 10px;
- 
 }
 
 .card:hover{
@@ -108,12 +105,35 @@ body{
     border-radius: 8px;  
 }
 
+.detail-card{
+  display: flex;
+  justify-content: center;
+  padding: 100px;  
+  border-radius: 10px;
+}
+
+.detail-card img{
+  width: 500px;  
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 2px;  
+  margin-right: 80px;
+}
+
+.img-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container{
+  font-size: 1.5rem;
+  position: right;
+}
 
 .rendered-description{
   margin-top: 0;
 }
-
-
 
 
 .new-item,.form-button {
@@ -128,6 +148,22 @@ body{
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.see-details-btn{
+  width: 90px;
+  padding: 8px;
+  background-color: rgba(222, 183, 93, 0.21);
+  color: #333333e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons-container{
+  display: flex;
+  gap: 15px;
+}
+
 .new-item-container{
   display: flex;
   justify-content: right;
@@ -136,14 +172,13 @@ body{
 }
 
 .delete-button{
-  background-color: #c5481fb1;
   border: none;
-  color: white;
-  padding: 10px;
+  color: #c5481fdb;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 form{
@@ -170,4 +205,9 @@ form input {
 
 .form-button{
   margin-bottom: 190px;
+}
+
+
+.about{
+  text-align: center;
 }
