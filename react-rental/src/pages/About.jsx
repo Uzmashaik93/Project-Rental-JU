@@ -4,11 +4,11 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const teamMembers = [
   {
     name: "Shaik Uzma",
-    github: "https://github.com/alicejohnson",
-    linkedin: "https://www.linkedin.com/in/alicejohnson/",
+    github: "https://github.com/Uzmashaik93",
+    linkedin: "https://www.linkedin.com/in/shaik-uzma/",
   },
   {
-    name: "Julia solias",
+    name: "Julia Solias",
     github: "https://github.com/juliasohu",
     linkedin: "https://www.linkedin.com/in/julia-solias-huelamo/",
   },
