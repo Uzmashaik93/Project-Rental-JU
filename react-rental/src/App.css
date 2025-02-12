@@ -52,25 +52,6 @@ body{
  color:rgba(0, 0, 0, 0.80)
 }
 
-.sidebar{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  height: 100%;
-  width: 180px;
-  z-index: 1;
-  gap: 20px;
-}
-
-.sidebar a{
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.69);
-  padding-bottom: 15px;
-}
-
-.sidebar a:hover{
-  color:rgba(0, 0, 0, 0.80)
-}
 
 .list-container{
     display: flex;
@@ -174,11 +155,11 @@ body{
 .delete-button{
   border: none;
   color: #c5481fdb;
-  margin: 4px 2px;
+  margin: 7px 2px;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 form{
@@ -248,4 +229,8 @@ form input {
 
 .social-links a:nth-child(1):hover {
   color: #878787; 
+}
+
+.sidebar-container{
+  margin: 0 0 0 auto;
 }

@@ -10,6 +10,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { results } from "./data/aparments.json";
 import EditDetails from "./pages/EditDetailsPage";
+import SideBar from "./components/Sidebar";
 
 function App() {
   const [resultList, setResultList] = useState(results);
@@ -21,10 +22,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<ListAppartments
-            resultList={resultList}
-            setResultList={setResultList}
-          />}
+          element={
+            <ListAppartments
+              resultList={resultList}
+              setResultList={setResultList}
+            />
+          }
         />
         <Route
           path="/apartmentdetails/:listId"
@@ -32,17 +35,21 @@ function App() {
         />
         <Route
           path="/CreateNewListing"
-          element={<CreateNewListing
-            resultList={resultList}
-            setResultList={setResultList}
-          />}
+          element={
+            <CreateNewListing
+              resultList={resultList}
+              setResultList={setResultList}
+            />
+          }
         />
         <Route
           path="/EditDetailsPage/:listId"
-          element={<EditDetails
-            resultList={resultList}
-            setResultList={setResultList}
-          />}
+          element={
+            <EditDetails
+              resultList={resultList}
+              setResultList={setResultList}
+            />
+          }
         />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<ErrorPage />} />

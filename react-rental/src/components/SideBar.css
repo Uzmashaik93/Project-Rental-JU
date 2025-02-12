@@ -1,0 +1,44 @@
+/* General Layout */
+.sidebar-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: #eae4e47c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Burger Menu Button */
+  .burger-menu {
+    background-color: #4b5563;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+ 
+  /* Navigation Item */
+  .nav-item {
+
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  
+  
+ 
