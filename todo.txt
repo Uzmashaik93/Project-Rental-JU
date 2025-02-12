@@ -1,0 +1,4 @@
+1. Button or link which redirects to the create form component
+2. Create form page component to add new listing
+3. Editing the existing listing
+4. Styling
