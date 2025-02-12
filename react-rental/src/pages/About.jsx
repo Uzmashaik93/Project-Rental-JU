@@ -31,10 +31,10 @@ function AboutPage() {
         <div className="member-card" key={index}>
           <h3>{member.name}</h3>
           <div className="social-links">
-            <a href={member.github} target="_blank" rel="noopener noreferrer">
+            <a href={member.github}>
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-            <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+            <a href={member.linkedin}>
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
           </div>
