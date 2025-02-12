@@ -31,10 +31,10 @@ function ItemDetail({ apartmentsList }) {
           <strong>{apartment.name}</strong>
         </p>
         <p>Accommodates: {apartment.accommodates}</p>
-        <p>Bathrooms: {apartment.bathrooms}</p>
-        <p>Bedrooms: {apartment.bedrooms}</p>
+        <p>Bathrooms: {apartment.bathrooms ? apartment.bathrooms : "N/A"}</p>
+        <p>Bedrooms: {apartment.bedrooms ? apartment.bedrooms : "N/A"}</p>
         <p>
-          <strong>Price:</strong> {apartment.price}
+          <strong>Price:</strong> {apartment.price ? apartment.price : "N/A"}
         </p>
         <NavLink
           to={`/EditDetailsPage/${apartment.id}`}
