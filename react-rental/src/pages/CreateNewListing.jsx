@@ -16,11 +16,10 @@ function CreateNewListing({ resultList, setResultList }) {
 
     const newListing = {
       name: name,
-      accomodates: accommodates,
+      accommodates: accommodates,
       bathrooms: bathrooms,
       bedrooms: bedrooms,
       price: price,
-      instant_bookable: true,
       picture_url: "",
       id: uuid(),
     };
@@ -57,7 +56,7 @@ function CreateNewListing({ resultList, setResultList }) {
           Number of People
           <input
             type="number"
-            name="accomodates"
+            name="accommodates"
             placeholder="Enter number"
             value={accommodates}
             onChange={(e) => {

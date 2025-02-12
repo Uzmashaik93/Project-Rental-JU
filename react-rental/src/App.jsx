@@ -10,7 +10,6 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { results } from "./data/aparments.json";
 import EditDetails from "./pages/EditDetailsPage";
-import SideBar from "./components/Sidebar";
 
 function App() {
   const [resultList, setResultList] = useState(results);
