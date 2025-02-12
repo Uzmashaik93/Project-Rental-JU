@@ -8,7 +8,7 @@ function ListItem({ apt, onDelete }) {
     <div className="card">
       <img src={apt.picture_url || dummyImage} alt={apt.name} />
       <p style={{ textAlign: "center", height: 30 }}>{apt.name}</p>
-      <p>Price: {apt.price}</p>
+      <p>Price: {apt.price ? apt.price : "N/A"}</p>
       <div className="buttons-container">
         <NavLink className="navlink" to={`/apartmentdetails/${apt.id}`}>
           <button className="see-details-btn">See details</button>
