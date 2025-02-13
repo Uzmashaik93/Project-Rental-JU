@@ -7,7 +7,7 @@ function ListAppartments({ resultList, setResultList }) {
 
   const filteredItems = useMemo(() => {
     return resultList.filter((item) => {
-      return item.name.includes(query.toLowerCase());
+      return item.name.toLowerCase().includes(query.toLowerCase());
     });
   }, [resultList, query]);
 
