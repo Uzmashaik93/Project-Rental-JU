@@ -1,6 +1,6 @@
 import logo from "../assets/JU-logo.png";
 import { NavLink } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 function Navbar() {
   return (
