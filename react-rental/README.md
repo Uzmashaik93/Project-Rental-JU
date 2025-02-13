@@ -22,5 +22,5 @@ This is an educational project to create a React website that displays apartment
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/ju-apartments.git
+   git clone https://github.com/Uzmashaik93/Project-Rental-JU/tree/main
    cd ju-apartments
