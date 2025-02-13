@@ -147,7 +147,8 @@ body{
 
 .new-item-container{
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
   margin-right: 20px;
 }
@@ -233,4 +234,12 @@ form input {
 
 .sidebar-container{
   margin: 0 0 0 auto;
+}
+
+.search-bar input{
+  width: 35vw;
+  height: 35px;
+  border: 0.2px solid #413f3f3f;
+  border-radius: 6px;
+  text-align: center;
 }

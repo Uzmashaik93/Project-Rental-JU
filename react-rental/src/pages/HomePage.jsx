@@ -1,6 +1,9 @@
 import { useMemo, useState } from "react";
 import ListItem from "../components/ListItem";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 function ListAppartments({ resultList, setResultList }) {
   const [query, setQuery] = useState("");
@@ -19,14 +22,15 @@ function ListAppartments({ resultList, setResultList }) {
   return (
     <div>
       <div className="new-item-container">
-        <label>
-          Search:
+      <div className="search-bar">
+        <FontAwesomeIcon icon={faSearch} style={{marginRight:15, marginTop:25, fontSize:"1.3rem", color:"#565555e2"}}/>
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             type="search"
+            placeholder="Search for an appartment"
           />
-        </label>
+        </div>
         <NavLink to="/CreateNewListing">
           <button className="new-item">Create New Listing</button>
         </NavLink>
