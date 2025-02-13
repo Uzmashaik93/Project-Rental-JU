@@ -3,6 +3,7 @@ body{
   margin: 0;
   background-color: rgb(244, 240, 235);
   color: black;
+  font-family:"Montserrat", serif;
 }
 
 .navbar{
@@ -127,6 +128,8 @@ body{
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family:"Montserrat", serif;
+  font-size: 0.7rem
 }
 
 .see-details-btn{
@@ -138,6 +141,7 @@ body{
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family:"Montserrat", serif;
 }
 
 .buttons-container{
@@ -243,3 +247,14 @@ form input {
   border-radius: 6px;
   text-align: center;
 }
+
+input {
+  font-family:"Montserrat", serif;
+}
+
+@media screen and (min-width: 1900px){
+  .list-container{
+    margin-right: 4px;
+    margin-left: 4px;
+    }
+  }
