@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-export default function Sidebar() {
+function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
 
@@ -44,3 +44,4 @@ export default function Sidebar() {
     </div>
   );
 }
+export default Sidebar;
