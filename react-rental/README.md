@@ -1,8 +1,26 @@
-# React + Vite
+# JU Apartments Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an educational project to create a React website that displays apartments available for rental. The project demonstrates the use of modern web development techniques and tools.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **JavaScript**
+- **React**
+- **React Router**
+- **CSS**
+- **HTML**
+
+## Features
+
+- **Responsive Design**: Ensures compatibility across various devices.
+- **Collapsible Sidebar**: A sidebar that can be toggled open or closed for easy navigation.
+- **Dynamic Routing**: Uses React Router for seamless page transitions.
+- **State Management**: Utilizes React's `useState` for managing component state.
+- **Interactive UI**: Includes buttons and forms for user interactions.
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/ju-apartments.git
+   cd ju-apartments
