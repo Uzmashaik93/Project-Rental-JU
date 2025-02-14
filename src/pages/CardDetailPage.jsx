@@ -40,7 +40,9 @@ function ItemDetail({ apartmentsList }) {
           to={`/EditDetailsPage/${apartment.id}`}
           renderComponent={<EditDetails />}
         >
-          <button className="form-button">Edit</button>
+          <button className="form-button" id="edit-btn">
+            Edit
+          </button>
         </NavLink>
       </div>
     </div>

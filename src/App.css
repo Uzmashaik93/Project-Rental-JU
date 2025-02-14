@@ -258,3 +258,47 @@ input {
     margin-left: 4px;
     }
   }
+
+  @media screen and (max-width: 900px){
+
+    .sidebar-container{
+      margin-left: 40px;
+    }
+   .detail-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px;
+    font-size: 0.8rem;
+   }
+   .detail-card img{
+    max-width: 300px ;
+    margin: 0 auto;
+   }
+
+   #edit-btn{
+    margin-bottom: 0;
+   }
+
+   .new-item-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0;
+   }
+
+   .search-bar input{
+    width: 300px;
+   }
+
+   form{
+    margin-top: 20px;
+   }
+   .form-button{
+    margin-bottom: 130px;
+   }
+   .about-container{
+    margin: 38px;
+   }
+  }
