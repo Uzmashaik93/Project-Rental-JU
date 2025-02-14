@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-
 function ListAppartments({ resultList, setResultList }) {
   const [query, setQuery] = useState("");
 
@@ -22,13 +21,21 @@ function ListAppartments({ resultList, setResultList }) {
   return (
     <div>
       <div className="new-item-container">
-      <div className="search-bar">
-        <FontAwesomeIcon icon={faSearch} style={{marginRight:15, marginTop:25, fontSize:"1.3rem", color:"#565555e2"}}/>
+        <div className="search-bar">
+          <FontAwesomeIcon
+            icon={faSearch}
+            style={{
+              marginRight: 15,
+              marginTop: 25,
+              fontSize: "1.3rem",
+              color: "#565555e2",
+            }}
+          />
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             type="search"
-            placeholder="Search for an appartment"
+            placeholder="Search for an apartment"
           />
         </div>
         <NavLink to="/CreateNewListing">
