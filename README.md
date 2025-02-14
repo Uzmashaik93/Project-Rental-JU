@@ -2,6 +2,8 @@
 
 This is an educational project to create a React website that displays apartments available for rental. The project demonstrates the use of modern web development techniques and tools.
 
+[Demo 💻](https://ju-apartments.netlify.app/)
+
 ## Technologies Used
 
 - **JavaScript**
